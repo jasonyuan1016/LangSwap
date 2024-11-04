@@ -170,8 +170,6 @@ def convert_excel_to_js():
     for sheet_name in sheet_names:
         # 选择要读取的工作表
         df = pd.read_excel(excel_file_path, sheet_name=sheet_name)
-        print("sheet_name-----------------", end=" ")
-        print(sheet_name)
         # 获取列名
         lang_tag = df.columns[1:]
         # 读取指定列的数据
